@@ -20,7 +20,7 @@ class ZeroShotLLMAgent:
     ROLE_USER = "user"
     ROLE_ASSISTANT = "assistant"
 
-    def __init__(self, logger: logging.Logger, prompt: str, temperature: float = 0.0, with_memory: bool = True):
+    def __init__(self, logger: logging.Logger, prompt: str, temperature: float = 0.0):
         """
         Initialize the ZeroShotLLMAgent.
         Args:
@@ -29,7 +29,6 @@ class ZeroShotLLMAgent:
             temperature (float): The temperature for the OpenAI model.
         """
         self.logger = logger
-        self.with_memory = with_memory
         self.context: List[Dict[str, str]] = []
         self.logger.debug("Initializing ZeroShotLLMAgent")
 
@@ -84,9 +83,7 @@ class ZeroShotLLMAgent:
 
     def get_response_to_input(self, new_message: str) -> str:
         """
-        Generate a response to the new message and update the conversation history
-        if memory is enabled.
-        
+        Generate a response to the new message and update the conversation history.
         Args:
             new_message (str): The new message from the user.
         Returns:
@@ -94,13 +91,7 @@ class ZeroShotLLMAgent:
         """
         self.update_context(self.ROLE_USER, new_message)
         response = self._invoke_llm_on_context()
-
-        if self.with_memory:
-            self.update_context(self.ROLE_ASSISTANT, response)
-        else:
-            # If the memory is disabled, only keep the system messages #Todo: this is not efficient
-            self.context = [entry for entry in self.context if entry["role"] == self.ROLE_SYSTEM]
-
+        self.update_context(self.ROLE_ASSISTANT, response)
         return response
 
     def update_context(self, role: str, new_message: str):

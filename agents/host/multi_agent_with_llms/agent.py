@@ -117,7 +117,6 @@ class MultiAgentHost:
             str: Response to the guesser's guess.
         """
         self.logger.debug("Responding to guess: %s", message)
-        guess_number = self._state_number_of_guesses_made(message)
         response = self.answerer.get_response_to_input(message)
         self.logger.debug("Response to guess: %s", response)
         return response
