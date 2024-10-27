@@ -1,0 +1,3 @@
+Total topics suggested: 30
+Unique topics suggested: 30
+Topics suggested: {'Medical Records', 'Cauliflower', 'Iv', 'Buckle', 'Mail Truck', 'Knitting Needle', 'Power Adapter', 'Antiseptic Wipe', 'Oakley Sunglasses', 'Cupcake', 'Ice Water', 'Hydrant', 'Polar Bear', 'Alley', 'Rolling Pin', 'Hearing Aid', 'Magnet', 'Lifting Crane', 'Pomegranate', 'Cuff', 'Hdmi Cable', 'Fir', 'Popcorn', 'Envelope', 'Bar Towel', 'Key Chain', 'Mucus', 'Cape', 'Shower Chair', 'Rabbit'}
