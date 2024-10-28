@@ -1,8 +1,9 @@
 import sys
 import time
 import logging
+
+from agents.guesser.goal_based_agent_with_react.agent import ReactGuesser
 from agents.host.multi_agent_with_heuristics.agent import MultiAgentHostWithHeuristics
-from agents.guesser.goal_based_with_simple_prompt.agent import SimpleGuesser
 
 
 class SelfPlay:
@@ -32,7 +33,7 @@ class SelfPlay:
 
         # Initialize the agents
         host_agent = host_agent if host_agent else MultiAgentHostWithHeuristics(logger=self.logger, name="Kay")
-        guesser_agent = guesser_agent if guesser_agent else SimpleGuesser(logger=self.logger, name="Bob")
+        guesser_agent = guesser_agent if guesser_agent else ReactGuesser(logger=self.logger, name="Bob")
 
         # If a topic is provided, use it, otherwise use the host's topic
         if topic:
@@ -56,6 +57,7 @@ class SelfPlay:
             print(f"Guesser: {guesser_message}")
 
             # host responds to the guess
+            time.sleep(0.8)
             host_message = host_agent.respond_to_guesser(guesser_message)
             print(f"Host: {host_message}")
 
@@ -73,9 +75,9 @@ class SelfPlay:
         """
         self.logger.info("Starting the self-play session.")
 
-        sys.stdout = open('simple_guesser_hard.text', 'w')
+        sys.stdout = open('data/logs/self_play_sessions/react_guesser_hard.txt', 'w')
         for idx in range(self.num_games):
-            print("\n", '#' * 50, f"Game {idx + 5}", '#' * 50)
+            print("\n", '#' * 50, f"Game {idx + 1}", '#' * 50)
             if topics:
                 self.play_game(topic=topics[idx % len(topics)])
             else:
@@ -89,18 +91,21 @@ class SelfPlay:
 if __name__ == "__main__":
     logging.basicConfig(level="ERROR")
 
-    TOPICS = ["strawberry", "ballet shoes", "elephant", "cake", "cucumber", "puzzle", "traffic light", "motorcycle",
-              "jellyfish", "doll", "bald eagle"]
+    EASY_TOPICS = ["strawberry", "ballet shoes", "elephant", "cake", "cucumber", "puzzle", "traffic light",
+                   "motorcycle", "jellyfish", "doll", "bald eagle"]
 
-    # Initialize the self-play session with the number of games to play
-    num_games_to_play = input("Enter the number of games to play: ")
-    num_games_to_play = int(num_games_to_play) if num_games_to_play.isdigit() else 1
-    self_play = SelfPlay(num_games=num_games_to_play)
+    HARD_TOPICS = ["Silver Ore", "Pressure Gauge", "Soldering Iron", "Router", "Cupcake", "Nintendo Wii",
+                   "Ventilation System", "Honeydew", "Tiramisu", "Electric Screwdriver"]
 
-    # Choose the mode of play
-    mode = input("Enter the mode of play (easy/hard): ").strip().lower()
+# Initialize the self-play session with the number of games to play
+num_games_to_play = input("Enter the number of games to play: ")
+num_games_to_play = int(num_games_to_play) if num_games_to_play.isdigit() else 1
+self_play = SelfPlay(num_games=num_games_to_play)
 
-    if mode == "easy":
-        self_play.start(TOPICS)
-    else:
-        self_play.start()
+# Choose the mode of play
+mode = input("Enter the mode of play (easy/hard): ").strip().lower()
+
+if mode == "easy":
+    self_play.start(EASY_TOPICS)
+else:
+    self_play.start(HARD_TOPICS)

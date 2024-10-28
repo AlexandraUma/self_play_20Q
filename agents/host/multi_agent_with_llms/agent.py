@@ -1,4 +1,5 @@
 from agents.frameworks.chat_llm import ChatLLM
+from agents.utils.formatting_utils import format_conversation_context
 from agents.host.multi_agent_with_llms.program import topic_suggester_prompt, state_tracker_prompt, answerer_prompt
 
 
@@ -43,29 +44,6 @@ class MultiAgentHost:
         self.logger.info("Topic suggested: %s", topic)
         return topic
 
-    def _build_answerer_conversation_context(self) -> str:
-        """
-        Builds the context of the conversation between the host and the guesser from the answerer's context.
-        Returns:
-            str: Formatted conversation context.
-        """
-        # We use the number of user turns as a proxy for the number of turns.
-        number_of_turns = len([entry for entry in self.answerer.context if entry["role"] == "user"])
-        self.logger.info(f"Building answerer conversation context from {number_of_turns} turns")
-
-        conversation = []
-        role_mapper = {"assistant": "Answerer", "user": "Guesser"}
-        for entry in self.answerer.context:
-            role = entry["role"]
-            if role not in role_mapper:
-                continue
-            role = role_mapper[role]
-            content = entry["content"]
-            conversation.append(f"{role}: {content}")
-        conversation_context = "\n".join(conversation)
-
-        return conversation_context
-
     def _get_guess_number_from_state_tracker(self) -> str:
         """
         The Guess Number is the number of valid guesses made by the guesser, assuming the current
@@ -78,8 +56,9 @@ class MultiAgentHost:
         """
         self.logger.info("Getting the guess number from state tracker...")
 
-        # Get the conversation context so far, excluding the current message from the guesser
-        conversation_so_far = self._build_answerer_conversation_context()
+        # Get the conversation context so far
+        role_mapper = {"assistant": "Answerer", "user": "Guesser"}
+        conversation_so_far = format_conversation_context(self.answerer.context, role_mapper)
 
         # Get the guess number from the state tracker
         guess_number = int(self.state_tracker.get_response_to_input(conversation_so_far)) + 1
