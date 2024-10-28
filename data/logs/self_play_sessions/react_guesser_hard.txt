@@ -1,0 +1,617 @@
+
+ ################################################## Game 1 ##################################################
+---------Host is thinking of Silver Ore-----------
+Host: Hi! I'm Kay, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1
+Guesser: Is it something commonly found in a household?
+Host: No.
+----Turn 2
+Guesser: Is it typically found outdoors?
+Host: Yes.
+----Turn 3
+Guesser: Is it a natural object?
+Host: Yes.
+----Turn 4
+Guesser: Is it a plant?
+Host: No.
+----Turn 5
+Guesser: Is it an animal?
+Host: No.
+----Turn 6
+Guesser: Is it a type of rock or mineral?
+Host: Yes.
+----Turn 7
+Guesser: Is it commonly found in a specific geographic location or region?
+Host: Yes.
+----Turn 8
+Guesser: Is it associated with a well-known natural landmark or formation?
+Host: No.
+----Turn 9
+Guesser: Is it commonly used in construction or building materials?
+Host: No.
+----Turn 10
+Guesser: Is it known for its use in jewelry or as a gemstone?
+Host: Yes.
+----Turn 11
+Guesser: Is it a transparent or translucent gemstone?
+Host: No.
+----Turn 12
+Guesser: Is it primarily known for being a specific color?
+Host: No.
+----Turn 13
+Guesser: Is it known for having a unique texture or pattern?
+Host: No.
+----Turn 14
+Guesser: Is it known for having a metallic luster?
+Host: Yes.
+----Turn 15
+Guesser: Is it a precious metal?
+Host: Yes.
+----Turn 16
+Guesser: Is it commonly used in making coins?
+Host: Yes.
+----Turn 17
+Guesser: Is it silver?
+Host: No.
+----Turn 18
+Guesser: Is it gold?
+Host: No.
+----Turn 19
+Guesser: Is it copper?
+Host: No. You have one guess left. Make it count!
+----Turn 20
+Guesser: Is it platinum?
+Host: Sorry, you didn't guess it. I was thinking of Silver Ore.
+Game over!
+
+ ################################################## Game 2 ##################################################
+---------Host is thinking of Pressure Gauge-----------
+Host: Hi! I'm Kay, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1
+Guesser: Is the object commonly found indoors?
+Host: Yes.
+----Turn 2
+Guesser: Is the object typically found in a kitchen?
+Host: No.
+----Turn 3
+Guesser: Is the object typically found in a bedroom?
+Host: No.
+----Turn 4
+Guesser: Is the object typically found in a bathroom?
+Host: No.
+----Turn 5
+Guesser: Is the object typically found in an office?
+Host: No.
+----Turn 6
+Guesser: Is the object typically found in a dining room?
+Host: No.
+----Turn 7
+Guesser: Is the object typically found in a hallway or entryway?
+Host: No.
+----Turn 8
+Guesser: Is the object typically found in a basement or attic?
+Host: No.
+----Turn 9
+Guesser: Is the object typically found in a garage?
+Host: Yes.
+----Turn 10
+Guesser: Is the object a tool used for vehicle maintenance or repair?
+Host: Yes.
+----Turn 11
+Guesser: Is the tool a power tool?
+Host: No.
+----Turn 12
+Guesser: Is the tool used for tightening or loosening bolts or screws?
+Host: No.
+----Turn 13
+Guesser: Is the tool used for measuring or diagnosing vehicle issues?
+Host: Yes.
+----Turn 14
+Guesser: Is the tool a dipstick?
+Host: No.
+----Turn 15
+Guesser: Is the tool used to measure the level of oil in a vehicle?
+Host: No.
+----Turn 16
+Guesser: Is the tool used to measure coolant levels in a vehicle?
+Host: No.
+----Turn 17
+Guesser: Is the tool used to measure brake fluid levels in a vehicle?
+Host: No.
+----Turn 18
+Guesser: Is the tool used to measure battery charge or voltage?
+Host: No.
+----Turn 19
+Guesser: Is the tool used to measure or check the alignment of vehicle parts?
+Host: No. You have one guess left. Make it count!
+----Turn 20
+Guesser: Is the tool a spark plug gap tool?
+Host: Sorry, you didn't guess it. I was thinking of a pressure gauge.
+Game over!
+
+ ################################################## Game 3 ##################################################
+---------Host is thinking of Soldering Iron-----------
+Host: Hi! I'm Kay, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1
+Guesser: Is the object typically found indoors?
+Host: Yes.
+----Turn 2
+Guesser: Is the object commonly found in the kitchen?
+Host: No.
+----Turn 3
+Guesser: Is the object commonly found in the living room?
+Host: No.
+----Turn 4
+Guesser: Is the object commonly found in the bedroom?
+Host: No.
+----Turn 5
+Guesser: Is the object commonly found in a bathroom?
+Host: No.
+----Turn 6
+Guesser: Is the object commonly found in an office or study room?
+Host: No.
+----Turn 7
+Guesser: Is the object used for a specific activity or function?
+Host: Yes.
+----Turn 8
+Guesser: Is the object related to entertainment or leisure activities?
+Host: No.
+----Turn 9
+Guesser: Is the object related to cleaning or maintenance activities?
+Host: No.
+----Turn 10
+Guesser: Is the object related to health or personal care activities?
+Host: No.
+----Turn 11
+Guesser: Is the object related to storage or organization?
+Host: No.
+----Turn 12
+Guesser: Is the object related to a hobby or craft activity?
+Host: Yes.
+----Turn 13
+Guesser: Is the object primarily made of fabric or textile materials?
+Host: No.
+----Turn 14
+Guesser: Is the object primarily made of wood?
+Host: No.
+----Turn 15
+Guesser: Is the object primarily made of metal?
+Host: Yes.
+----Turn 16
+Guesser: Is the object a tool used in crafting or hobby activities?
+Host: Yes.
+----Turn 17
+Guesser: Is the object used in jewelry making?
+Host: No.
+----Turn 18
+Guesser: Is the object used in model building or assembling?
+Host: Yes.
+----Turn 19
+Guesser: Is the object used for cutting or trimming materials?
+Host: No. You have one guess left. Make it count!
+----Turn 20
+Guesser: Is the object a pair of pliers used in crafting or hobby activities?
+Host: Sorry, you didn't guess it. I was thinking of a soldering iron.
+Game over!
+
+ ################################################## Game 4 ##################################################
+---------Host is thinking of Router-----------
+Host: Hi! I'm Kay, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1
+Guesser: Is the object a living thing?
+Host: No.
+----Turn 2
+Guesser: Is the object larger than a microwave?
+Host: No.
+----Turn 3
+Guesser: Is the object typically found outdoors?
+Host: No.
+----Turn 4
+Guesser: Is the object commonly found in a specific room of the house?
+Host: Yes.
+----Turn 5
+Guesser: Is the object commonly found in the kitchen?
+Host: No.
+----Turn 6
+Guesser: Is the object commonly found in the bathroom?
+Host: No.
+----Turn 7
+Guesser: Is the object commonly found in the bedroom?
+Host: No.
+----Turn 8
+Guesser: Is the object commonly found in an office or study?
+Host: Yes.
+----Turn 9
+Guesser: Is the object electronic?
+Host: Yes.
+----Turn 10
+Guesser: Is the object used for communication purposes?
+Host: Yes.
+----Turn 11
+Guesser: Is the object a smartphone?
+Host: No.
+----Turn 12
+Guesser: Is the object a tablet?
+Host: No.
+----Turn 13
+Guesser: Is the object a headset or headphones?
+Host: No.
+----Turn 14
+Guesser: Is the object a webcam?
+Host: No.
+----Turn 15
+Guesser: Is the object a router or modem?
+Host: Yes, you've got it! It's a router. Great job!
+Game over!
+
+ ################################################## Game 5 ##################################################
+---------Host is thinking of Cupcake-----------
+Host: Hi! I'm Kay, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1
+Guesser: Is the object commonly found indoors?
+Host: Yes.
+----Turn 2
+Guesser: Is the object typically used for a specific function or activity?
+Host: Yes.
+----Turn 3
+Guesser: Is the object typically found in the kitchen?
+Host: Yes.
+----Turn 4
+Guesser: Is the object an appliance?
+Host: No.
+----Turn 5
+Guesser: Is the object primarily made of plastic?
+Host: No.
+----Turn 6
+Guesser: Is the object primarily made of wood?
+Host: No.
+----Turn 7
+Guesser: Is the object primarily made of glass?
+Host: No.
+----Turn 8
+Guesser: Is the object primarily made of ceramic?
+Host: No.
+----Turn 9
+Guesser: Is the object primarily made of fabric?
+Host: No.
+----Turn 10
+Guesser: Is the object primarily made of rubber?
+Host: No.
+----Turn 11
+Guesser: Is the object primarily made of stone?
+Host: No.
+----Turn 12
+Guesser: Is the object primarily made of silicone?
+Host: No.
+----Turn 13
+Guesser: Is the object primarily made of paper?
+Host: No.
+----Turn 14
+Guesser: Is the object primarily made of wax?
+Host: No.
+----Turn 15
+Guesser: Is the object primarily made of leather?
+Host: No.
+----Turn 16
+Guesser: Is the object primarily made of bamboo?
+Host: No.
+----Turn 17
+Guesser: Is the object primarily made of clay?
+Host: No.
+----Turn 18
+Guesser: Is the object primarily made of cardboard?
+Host: No.
+----Turn 19
+Guesser: Is the object primarily made of foam?
+Host: No. You have one guess left. Make it count!
+----Turn 20
+Guesser: Is the object primarily made of sugar?
+Host: Yes. Sorry, you didn't guess it. I was thinking of a cupcake.
+Game over!
+
+ ################################################## Game 6 ##################################################
+---------Host is thinking of Nintendo Wii-----------
+Host: Hi! I'm Kay, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1
+Guesser: Is the object something that can typically be found indoors?
+Host: Yes.
+----Turn 2
+Guesser: Is the object commonly found in a kitchen?
+Host: No.
+----Turn 3
+Guesser: Is the object commonly found in a living room?
+Host: Yes.
+----Turn 4
+Guesser: Is the object a piece of furniture?
+Host: No.
+----Turn 5
+Guesser: Is the object an electronic device?
+Host: Yes.
+----Turn 6
+Guesser: Is the object used for entertainment purposes?
+Host: Yes.
+----Turn 7
+Guesser: Is the object primarily used for watching visual content?
+Host: No.
+----Turn 8
+Guesser: Is the object primarily used for listening to audio?
+Host: No.
+----Turn 9
+Guesser: Is the object primarily used for playing video games?
+Host: Yes.
+----Turn 10
+Guesser: Is the object a portable device?
+Host: No.
+----Turn 11
+Guesser: Is the object a gaming console?
+Host: Yes.
+----Turn 12
+Guesser: Is the gaming console made by a company based in Japan?
+Host: Yes.
+----Turn 13
+Guesser: Is the gaming console made by Nintendo?
+Host: Yes.
+----Turn 14
+Guesser: Is the gaming console part of the Nintendo Switch family?
+Host: No.
+----Turn 15
+Guesser: Is the gaming console part of the Wii family?
+Host: Yes.
+----Turn 16
+Guesser: Is the gaming console the original Wii?
+Host: Yes, you've got it! It's a Nintendo Wii. Great job!
+Game over!
+
+ ################################################## Game 7 ##################################################
+---------Host is thinking of Ventilation System-----------
+Host: Hi! I'm Kay, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1
+Guesser: Is the object a living thing?
+Host: No.
+----Turn 2
+Guesser: Is the object something that can fit in a typical backpack?
+Host: No.
+----Turn 3
+Guesser: Is the object typically found outdoors?
+Host: No.
+----Turn 4
+Guesser: Is the object typically used in an industrial or commercial setting?
+Host: Yes.
+----Turn 5
+Guesser: Is the object a type of machinery?
+Host: Yes.
+----Turn 6
+Guesser: Is the machinery primarily used for assembling products?
+Host: No.
+----Turn 7
+Guesser: Is the machinery primarily used for processing raw materials?
+Host: No.
+----Turn 8
+Guesser: Is the machinery primarily used for packaging or preparing products for distribution?
+Host: No.
+----Turn 9
+Guesser: Is the machinery primarily used for maintenance or repair purposes?
+Host: No.
+----Turn 10
+Guesser: Is the machinery primarily used for quality control or inspection purposes?
+Host: No.
+----Turn 11
+Guesser: Is the machinery primarily used for energy generation or power supply?
+Host: No.
+----Turn 12
+Guesser: Is the machinery primarily used for cleaning or waste management purposes?
+Host: No.
+----Turn 13
+Guesser: Is the machinery primarily used for communication or data processing purposes?
+Host: No.
+----Turn 14
+Guesser: Is the machinery primarily used for safety or security purposes?
+Host: No.
+----Turn 15
+Guesser: Is the machinery primarily used in the construction industry?
+Host: No.
+----Turn 16
+Guesser: Is the machinery primarily used in the healthcare or medical industry?
+Host: No.
+----Turn 17
+Guesser: Is the machinery primarily used in the entertainment or media industry?
+Host: No.
+----Turn 18
+Guesser: Is the machinery primarily used in the mining industry?
+Host: No.
+----Turn 19
+Guesser: Is the machinery primarily used in the textile or clothing industry?
+Host: No. You have one guess left. Make it count!
+----Turn 20
+Guesser: Is the machinery primarily used in the aerospace industry?
+Host: No. Sorry, you didn't guess it. I was thinking of a Ventilation System.
+Game over!
+
+ ################################################## Game 8 ##################################################
+---------Host is thinking of Honeydew-----------
+Host: Hi! I'm Kay, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1
+Guesser: Is the object commonly found indoors?
+Host: No.
+----Turn 2
+Guesser: Is the object a natural element?
+Host: Yes.
+----Turn 3
+Guesser: Is the object a living organism?
+Host: No.
+----Turn 4
+Guesser: Is the object a body of water?
+Host: No.
+----Turn 5
+Guesser: Is the object a natural phenomenon?
+Host: No.
+----Turn 6
+Guesser: Is the object related to weather or atmospheric conditions?
+Host: No.
+----Turn 7
+Guesser: Is the object a type of soil or earth material?
+Host: No.
+----Turn 8
+Guesser: Is the object a type of gas?
+Host: No.
+----Turn 9
+Guesser: Is the object a type of energy or force?
+Host: No.
+----Turn 10
+Guesser: Is the object a type of light or electromagnetic radiation?
+Host: No.
+----Turn 11
+Guesser: Is the object a type of sound or vibration?
+Host: No.
+----Turn 12
+Guesser: Is the object a type of fire or combustion-related element?
+Host: No.
+----Turn 13
+Guesser: Is the object a type of air or atmospheric component?
+Host: No.
+----Turn 14
+Guesser: Is the object a type of celestial body or space-related element?
+Host: No.
+----Turn 15
+Guesser: Is the object a type of plant or vegetation?
+Host: Yes.
+----Turn 16
+Guesser: Is the plant typically found in a forest environment?
+Host: No.
+----Turn 17
+Guesser: Is the plant typically found in a grassland or prairie environment?
+Host: No.
+----Turn 18
+Guesser: Is the plant typically found in a wetland or marsh environment?
+Host: No.
+----Turn 19
+Guesser: Is the plant typically found in a mountainous environment?
+Host: No. You have one guess left. Make it count!
+----Turn 20
+Guesser: Is the plant typically found in a coastal or beach environment?
+Host: No. Sorry, you didn't guess it. I was thinking of a honeydew.
+Game over!
+
+ ################################################## Game 9 ##################################################
+---------Host is thinking of Tiramisu-----------
+Host: Hi! I'm Kay, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1
+Guesser: Is the object typically found indoors?
+Host: Yes.
+----Turn 2
+Guesser: Is the object commonly found in the kitchen?
+Host: Yes.
+----Turn 3
+Guesser: Is the object an appliance?
+Host: No.
+----Turn 4
+Guesser: Is the object used for serving food?
+Host: No.
+----Turn 5
+Guesser: Is the object used for storing food?
+Host: No.
+----Turn 6
+Guesser: Is the object decorative in nature?
+Host: No.
+----Turn 7
+Guesser: Is the object made of metal?
+Host: No.
+----Turn 8
+Guesser: Is the object made of wood?
+Host: No.
+----Turn 9
+Guesser: Is the object made of glass?
+Host: No.
+----Turn 10
+Guesser: Is the object made of ceramic?
+Host: No.
+----Turn 11
+Guesser: Is the object made of fabric?
+Host: No.
+----Turn 12
+Guesser: Is the object made of rubber?
+Host: No.
+----Turn 13
+Guesser: Is the object made of paper?
+Host: No.
+----Turn 14
+Guesser: Is the object made of silicone?
+Host: No.
+----Turn 15
+Guesser: Is the object made of stone?
+Host: No.
+----Turn 16
+Guesser: Is the object made of wax?
+Host: No.
+----Turn 17
+Guesser: Is the object made of leather?
+Host: No.
+----Turn 18
+Guesser: Is the object made of clay?
+Host: No.
+----Turn 19
+Guesser: Is the object made of carbon fiber?
+Host: No. You have one guess left. Make it count!
+----Turn 20
+Guesser: Is the object a sponge?
+Host: No. Sorry, you didn't guess it. I was thinking of a Tiramisu.
+Game over!
+
+ ################################################## Game 10 ##################################################
+---------Host is thinking of Electric Screwdriver-----------
+Host: Hi! I'm Kay, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1
+Guesser: Is the object a living thing?
+Host: No.
+----Turn 2
+Guesser: Is the object made of metal?
+Host: Yes.
+----Turn 3
+Guesser: Is the object commonly found in a household?
+Host: Yes.
+----Turn 4
+Guesser: Is the object used for cooking or food preparation?
+Host: No.
+----Turn 5
+Guesser: Is the object used for cleaning or maintenance purposes?
+Host: Yes.
+----Turn 6
+Guesser: Is the object a handheld tool?
+Host: Yes.
+----Turn 7
+Guesser: Is the object used for repairing or assembling things?
+Host: Yes.
+----Turn 8
+Guesser: Is the object used for tightening or loosening screws or bolts?
+Host: Yes.
+----Turn 9
+Guesser: Is the object primarily used for turning screws?
+Host: Yes.
+----Turn 10
+Guesser: Is the object a Phillips screwdriver?
+Host: No.
+----Turn 11
+Guesser: Is the object a flathead screwdriver?
+Host: No.
+----Turn 12
+Guesser: Is the object a Torx screwdriver?
+Host: No.
+----Turn 13
+Guesser: Is the object a hex key or Allen wrench?
+Host: No.
+----Turn 14
+Guesser: Is the object a ratcheting screwdriver?
+Host: No.
+----Turn 15
+Guesser: Is the object a precision screwdriver?
+Host: No.
+----Turn 16
+Guesser: Is the object a multi-bit screwdriver?
+Host: No.
+----Turn 17
+Guesser: Is the object an offset screwdriver?
+Host: No.
+----Turn 18
+Guesser: Is the object an electric or power screwdriver?
+Host: Yes, you've got it! It's an electric screwdriver. Great job!
+Game over!

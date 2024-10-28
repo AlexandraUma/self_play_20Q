@@ -1,0 +1,390 @@
+################################################## Playing 20 Questions with the topic: strawberry ##################################################
+Alice: Hi! I'm Alice, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1----
+Guesser: Is it black?
+Alice: No.
+----Turn 2----
+Guesser: What color is it?
+Alice: Please ask yes/no questions.
+----Turn 3----
+Guesser: Is it grey?
+Alice: No.
+----Turn 4----
+Guesser: Is it blue?
+Alice: No.
+----Turn 5----
+Guesser: Is it green?
+Alice: No.
+----Turn 6----
+Guesser: Is it red?
+Alice: Yes.
+----Turn 7----
+Guesser: Is it pink?
+Alice: Yes, it can be.
+----Turn 8----
+Guesser: So it can be red or pink?
+Alice: Yes.
+----Turn 9----
+Guesser: Can it be yellow?
+Alice: No.
+----Turn 10----
+Guesser: Can it be found inside the house?
+Alice: Yes.
+----Turn 11----
+Guesser: Can it be found outside the house?
+Alice: Yes.
+----Turn 12----
+Guesser: Does it grow on treees?
+Alice: No.
+----Turn 13----
+Guesser: Does it grow though?
+Alice: Yes.
+----Turn 14----
+Guesser: So it's a plant?
+Alice: Yes, it is a type of plant.
+----Turn 15----
+Guesser: Is it an edible type of plant?
+Alice: Yes.
+----Turn 16----
+Guesser: Is it a fruit or is it a vegetable?
+Alice: Please ask yes/no questions.
+----Turn 17----
+Guesser: Is it a fruit?
+Alice: Yes.
+----Turn 18----
+Guesser: Is it a mango?
+Alice: No.
+----Turn 19----
+Guesser: Is it a plum?
+Alice: No.
+----Turn 20----
+Guesser: Is it a strawberry?
+Alice: Yes, you've got it! It's a strawberry. Great job!
+Game over!
+
+################################################## Playing 20 Questions with the topic: cake ##################################################
+Alice: Hi! I'm Alice, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1----
+Guesser: Is it a chair?
+Alice: No.
+----Turn 2----
+Guesser: Is it metal?
+Alice: No.
+----Turn 3----
+Guesser: Is it coffee?
+Alice: No.
+----Turn 4----
+Guesser: Is it robust?
+Alice: No.
+----Turn 5----
+Guesser: Is it brittle?
+Alice: Yes.
+----Turn 6----
+Guesser: Is it chewy?
+Alice: No.
+----Turn 7----
+Guesser: Can it be used in building houses?
+Alice: No.
+----Turn 8----
+Guesser: Can it be decorated?
+Alice: Yes.
+----Turn 9----
+Guesser: Can it grow on trees?
+Alice: No.
+----Turn 10----
+Guesser: Can it be found inside the ground?
+Alice: No.
+----Turn 11----
+Guesser: Does it decay?
+Alice: Yes.
+----Turn 12----
+Guesser: Is it sustainable?
+Alice: No.
+----Turn 13----
+Guesser: Is it toxic?
+Alice: No.
+----Turn 14----
+Guesser: Is it digestible?
+Alice: Yes.
+----Turn 15----
+Guesser: So it's edible?
+Alice: Yes.
+----Turn 16----
+Guesser: Is it yam?
+Alice: No.
+----Turn 17----
+Guesser: Is in coconut?
+Alice: No.
+----Turn 18----
+Guesser: Is it pumpkin?
+Alice: No. One last guess!
+----Turn 19----
+Guesser: Is it pie?
+Alice: Sorry, you didn't guess it. I was thinking of a cake.
+----Turn 20----
+Guesser: Is it cake?
+Alice: Yes, you've got it! It's a cake. Great job!
+Game over!
+
+################################################## Playing 20 Questions with the topic: cucumber ##################################################
+Alice: Hi! I'm Alice, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1----
+Guesser: is it a watermelon?
+Alice: No.
+----Turn 2----
+Guesser: Is it chewing gum?
+Alice: No.
+----Turn 3----
+Guesser: is it bubble gum?
+Alice: No.
+----Turn 4----
+Guesser: Is it a chair?
+Alice: No.
+----Turn 5----
+Guesser: Is it purple?
+Alice: No.
+----Turn 6----
+Guesser: Is it egg plant/
+Alice: No.
+----Turn 7----
+Guesser: Is it watermelon?
+Alice: No.
+----Turn 8----
+Guesser: Is it shoes?
+Alice: No.
+----Turn 9----
+Guesser: Is it a laptop?
+Alice: No.
+----Turn 10----
+Guesser: Is it a cake?
+Alice: No.
+----Turn 11----
+Guesser: Is it dress?
+Alice: No.
+----Turn 12----
+Guesser: Is it a car?
+Alice: No.
+----Turn 13----
+Guesser: Is it part of a car?
+Alice: No.
+----Turn 14----
+Guesser: Is it something that can be eaten for breakfast?
+Alice: Yes.
+----Turn 15----
+Guesser: Is it something that can be eaten for lunch?
+Alice: Yes.
+----Turn 16----
+Guesser: What about dinner?
+Alice: Please ask yes/no questions.
+----Turn 17----
+Guesser: is it something that can be eaten for dinner?
+Alice: Yes.
+----Turn 18----
+Guesser: Is it something that can be eaten?
+Alice: Yes.
+----Turn 19----
+Guesser: Is it something delicious?
+Alice: That can be subjective, but generally, yes, many people find it delicious.
+----Turn 20----
+Guesser: Is it a shirt?
+Alice: No.
+Game over!
+
+################################################## Playing 20 Questions with the topic: puzzle ##################################################
+Alice: Hi! I'm Alice, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1----
+Guesser: Is furniture?
+Alice: No.
+----Turn 2----
+Guesser: Is it decorative?
+Alice: Yes.
+----Turn 3----
+Guesser: Is it chewy?
+Alice: No.
+----Turn 4----
+Guesser: Can it be digital?
+Alice: No.
+----Turn 5----
+Guesser: Is it abstract?
+Alice: Yes.
+----Turn 6----
+Guesser: Is it also concrete?
+Alice: Yes.
+----Turn 7----
+Guesser: Is it colorful?
+Alice: Yes.
+----Turn 8----
+Guesser: Is it gorgeous?
+Alice: Yes.
+----Turn 9----
+Guesser: Is it ugly?
+Alice: No.
+----Turn 10----
+Guesser: Can it be found in games?
+Alice: Yes.
+----Turn 11----
+Guesser: Can it be found in books?
+Alice: Yes.
+----Turn 12----
+Guesser: Can it be found in films?
+Alice: Yes.
+----Turn 13----
+Guesser: Can the word be made into a verb?
+Alice: Yes.
+----Turn 14----
+Guesser: Is it manga?
+Alice: No.
+----Turn 15----
+Guesser: Is it Japanese?
+Alice: No.
+----Turn 16----
+Guesser: Is it Korean?
+Alice: No.
+----Turn 17----
+Guesser: Is it country specific?
+Alice: No.
+----Turn 18----
+Guesser: Is it universal?
+Alice: Yes.
+----Turn 19----
+Guesser: Is it generic?
+Alice: Yes.
+----Turn 20----
+Guesser: Is it a game?
+Alice: No.
+----Turn 21----
+Guesser: Is Sudoku an example?
+Alice: Yes.
+----Turn 22----
+Guesser: What kind of puzzle is it?
+Alice: Please ask yes/no questions.
+----Turn 23----
+Guesser: Is it a puzzle?
+Alice: Yes, you've got it! It's a puzzle. Great job!
+Game over!
+
+################################################## Playing 20 Questions with the topic: doll ##################################################
+Alice: Hi! I'm Alice, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1----
+Guesser: Is it human?
+Alice: No.
+----Turn 2----
+Guesser: Does it look human?
+Alice: Yes.
+----Turn 3----
+Guesser: Is there a movie about it?
+Alice: Yes.
+----Turn 4----
+Guesser: Can I have some examples of it?
+Alice: Please ask yes/no questions.
+----Turn 5----
+Guesser: Is American girl doll an example?
+Alice: Yes.
+----Turn 6----
+Guesser: Is it a Nintendo?
+Alice: No.
+----Turn 7----
+Guesser: Is it video game?
+Alice: No.
+----Turn 8----
+Guesser: Is it life-sized?
+Alice: No.
+----Turn 9----
+Guesser: Is it furniture?
+Alice: No.
+----Turn 10----
+Guesser: is it only for children?
+Alice: No.
+----Turn 11----
+Guesser: Is it usually for children?
+Alice: Yes.
+----Turn 12----
+Guesser: Is it old?
+Alice: It can be, but not necessarily.
+----Turn 13----
+Guesser: Is it humanoid?
+Alice: Yes.
+----Turn 14----
+Guesser: Does it have eyes?
+Alice: Yes.
+----Turn 15----
+Guesser: Does it have a nose?
+Alice: Yes.
+----Turn 16----
+Guesser: Can it smell?
+Alice: No.
+----Turn 17----
+Guesser: Is it alive?
+Alice: No.
+----Turn 18----
+Guesser: Is it dead?
+Alice: No.
+----Turn 19----
+Guesser: But it is non-living?
+Alice: Yes.
+----Turn 20----
+Guesser: Is it a motocylc?
+Alice: No.
+----Turn 21----
+Guesser: Is it a game?
+Alice: No.
+----Turn 22----
+Guesser: Is it a doll?
+Alice: Yes, you've got it! It's a doll. Great job!
+Game over!
+
+################################################## Playing 20 Questions with the topic: traffic light ##################################################
+Alice: Hi! I'm Alice, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1----
+Guesser: Does it move?
+Alice: No.
+----Turn 2----
+Guesser: Is it technology?
+Alice: Yes.
+----Turn 3----
+Guesser: Can it be found inside?
+Alice: No.
+----Turn 4----
+Guesser: Can you tell me what it is?
+Alice: Please ask yes/no questions.
+----Turn 5----
+Guesser: Is it a vehicle?
+Alice: No.
+----Turn 6----
+Guesser: Can it be used by vehicles?
+Alice: Yes.
+----Turn 7----
+Guesser: Can it be used on vehicles?
+Alice: No.
+----Turn 8----
+Guesser: Can it be used to tell the time?
+Alice: No.
+----Turn 9----
+Guesser: Does it have 3 colors?
+Alice: Yes.
+----Turn 10----
+Guesser: Does it change colors?
+Alice: Yes.
+----Turn 11----
+Guesser: Can be used as a basis for fines?
+Alice: Yes.
+----Turn 12----
+Guesser: Can it be found everywhere in the world?
+Alice: Yes.
+----Turn 13----
+Guesser: is it a modern day invention?
+Alice: Yes.
+----Turn 14----
+Guesser: Was it invented by the Germans?
+Alice: No.
+----Turn 15----
+Guesser: Who invented it?
+Alice: Please ask yes/no questions.
+----Turn 16----
+Guesser: Was it invented by me?
+Alice: No.
+----Turn 17----
+Guesser: Is it street lights?
+Alice: Yes, you've got it! It's a traffic light. Great job!
+Game over!
+
