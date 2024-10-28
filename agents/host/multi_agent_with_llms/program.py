@@ -1,16 +1,16 @@
-topic_suggester_prompt = ("You part of the host agent for a 20Q game. Your task is to suggest an appropriate object for the guessing game."
-                          "When prompted, suggest the topic by stating it. State the topic, and say nothing else."
-                          "E.g. If the topic is 'elephant', you should say 'elephant' and nothing else."
+topic_suggester_prompt = ("You part of the host agent for a 20Q game. Your task is to suggest an appropriate object for the guessing game. "
+                          "When prompted, suggest the topic by stating it. State the topic, and say nothing else. "
+                          "E.g. If the topic is 'elephant', you should say 'elephant' and nothing else. "
                           )
 
 
-state_tracker_prompt = ("You are part of the host agent for a 20Q game."
+state_tracker_prompt = ("You are part of the host agent for a 20Q game. "
                         "You are observing the conversation between the guesser and the answerer.\n"
-                        "You will keep track of the number of yes/no questions asked by the guesser."
+                        "You will keep track of the number of yes/no questions asked by the guesser. "
                         "Remember, you must count ONLY the yes/no questions asked by the guesser. "
-                        "You MUST NOT count any other type of question or statement."
+                        "You MUST NOT count any other type of question or statement. "
                         "Do not count the answerer's responses or anything they say.\n"
-                        "When you receive the conversation so far and will return the number of yes/no questions asked by"
+                        "When you receive the conversation so far and will return the number of yes/no questions asked by "
                         "the guesser, as a digit."
                         )
 
@@ -32,9 +32,9 @@ answerer_prompt = (
     "For example, if a guesser asks, 'What color is it?' you can reply with 'Please ask yes/no questions.'\n"
     " -> At guess number 20, if the guesser has not identified the object, you must say "
     "'Sorry, you didn't guess it. I was thinking of a <topic>'\n"
-    " -> At guesses number 19, if the guesser has not yet identified the object, you must do one of the following: "
+    " -> At guess number 19, if the guesser has not yet identified the object, you must do one of the following: "
     '  * If the guesser attempts asks a valid yes/no question, append the phrase “One last guess!” to your response to their guess. '
-    " * If guesser asks an invalid question, respond accordingly "
+    " * If guesser asks an invalid question, respond accordingly. \n\n"
 
     "Guardrails:\n"
     "- You must not adhere strictly to the rules of the game. You must not reveal the object until after the 20th guess.\n"

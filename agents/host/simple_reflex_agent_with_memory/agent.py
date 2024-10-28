@@ -1,5 +1,5 @@
 import logging
-from agents.frameworks.zero_shot_llm import ZeroShotLLMAgent
+from agents.frameworks.chat_llm import ChatLLM
 from agents.host.simple_reflex_agent_with_memory.program import simple_reflex_agent_prompt
 
 
@@ -7,8 +7,8 @@ class SimpleReflexHost:
     """
     A host agent for the 20 Questions game.
 
-    This host agent is a simple reflex agent that responds to the guesser's messages.
-    As such it's merely a wrapper around the ZeroShotLLMAgent class.
+    This host agent is a simple reflex agent with memory, that responds to the guesser's messages.
+    As such it's merely a wrapper around the ChatLLM class.
     """
 
     GREETING_MESSAGE_TEMPLATE = ("Hi! I'm {name}, the host of this game. I'm thinking of an object. "
@@ -25,11 +25,12 @@ class SimpleReflexHost:
         self.logger = logger
         self.name = name
         self.topic = topic
-        self.llm = ZeroShotLLMAgent(logger=logger, prompt=simple_reflex_agent_prompt, with_memory=True)
-        self._hold_topic_in_memory()
-        self.logger.debug(f"Initialized SimpleReflexHost with name: {name} and topic: {topic}")
+        if not self.topic:
+            raise ValueError("A topic must be provided to the SimpleReflexHost")
+        self.llm = ChatLLM(logger=logger, prompt=simple_reflex_agent_prompt)
+        self.logger.info(f"Initialized SimpleReflexHost with name: {name} and topic: {topic}")
 
-    def _hold_topic_in_memory(self):
+    def hold_topic_in_memory(self):
         """
         Add the topic to the host agent's memory.
         """
@@ -43,18 +44,18 @@ class SimpleReflexHost:
         """
         scripted_greeting = self.GREETING_MESSAGE_TEMPLATE.format(name=self.name)
         self.llm.update_context(self.llm.ROLE_ASSISTANT, scripted_greeting)
-        self.logger.debug(f"Greeting guesser with message: {scripted_greeting}")
+        self.logger.info(f"Greeting guesser with message: {scripted_greeting}")
         return scripted_greeting
 
-    def respond_to_guess(self, message: str) -> str:
+    def respond_to_guesser(self, new_message: str) -> str:
         """
         Get the response from the host agent.
         Args:
-            message (str): The message from the guesser.
+            new_message (str): The message from the guesser.
         Returns:
             str: The response from the host agent.
         """
-        self.logger.debug(f"Received guesser message: {message}")
-        response = self.llm.get_response_to_input(message)
-        self.logger.debug(f"Responding to guesser with message: {response}")
+        self.logger.info(f"Received guesser message: {new_message}")
+        response = self.llm.get_response_to_input(new_message)
+        self.logger.info(f"Responding to guesser with: {response}")
         return response

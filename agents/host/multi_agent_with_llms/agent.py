@@ -1,4 +1,4 @@
-from agents.frameworks.zero_shot_llm import ZeroShotLLMAgent
+from agents.frameworks.chat_llm import ChatLLM
 from agents.host.multi_agent_with_llms.program import topic_suggester_prompt, state_tracker_prompt, answerer_prompt
 
 
@@ -9,36 +9,28 @@ class MultiAgentHost:
     """
     GREETING_MESSAGE_TEMPLATE = "Hi! I'm {name}, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!"
 
-    def __init__(self, logger, name):
+    def __init__(self, logger, name, topic=None):
         """
         Initializes the MultiAgentHost with a given logger and host name.
         Args:
             logger: Logger to be used for logging purposes.
             name (str): Name of the host.
+            optional topic (str): The topic to add to the host agent's memory.
         """
         self.name = name
         self.logger = logger
-        self.logger.debug("Initializing MultiAgentHost with name: %s", name)
+        self.topic = topic
+        self.logger.info("Initializing MultiAgentHost with name: %s", name)
         self._initialize_agents()
-        self._hold_topic_in_memory()
 
     def _initialize_agents(self):
         """
         Initializes the agents for suggesting topics, tracking state, and answering questions.
         """
-        self.logger.debug("Initializing agents...")
-        self.topic_suggester = ZeroShotLLMAgent(logger=self.logger, prompt=topic_suggester_prompt, temperature=0.9)
-        self.state_tracker = ZeroShotLLMAgent(logger=self.logger, prompt=state_tracker_prompt)
-        self.answerer = ZeroShotLLMAgent(logger=self.logger, prompt=answerer_prompt)
-
-    def _hold_topic_in_memory(self):
-        """
-        Add the topic to the host agent's memory.
-        """
-        self.logger.debug("Holding topic in memory...")
-        self.topic = self._suggest_topic()
-        self.logger.debug("Suggested topic: %s", self.topic)
-        self.answerer.update_context("system", f"Here is the topic you're thinking of: {self.topic}")
+        self.logger.info("Initializing agents...")
+        self.topic_suggester = ChatLLM(logger=self.logger, prompt=topic_suggester_prompt, temperature=0.9)
+        self.state_tracker = ChatLLM(logger=self.logger, prompt=state_tracker_prompt, with_memory=False)
+        self.answerer = ChatLLM(logger=self.logger, prompt=answerer_prompt)
 
     def _suggest_topic(self) -> str:
         """
@@ -46,22 +38,10 @@ class MultiAgentHost:
         Returns:
             str: Suggested topic.
         """
-        self.logger.debug("Suggesting topic...")
+        self.logger.info("Suggesting topic...")
         topic = self.topic_suggester.get_response_to_input("Suggest an appropriate object for the guesser to guess")
-        self.logger.debug("Topic suggested: %s", topic)
+        self.logger.info("Topic suggested: %s", topic)
         return topic
-
-    def _add_guess_number_to_context(self, new_message: str):
-        """
-        Adds the current guess number to the answerer's context.
-        Args:
-            new_message (str): The new guess to add to the conversation context.
-        """
-        self.logger.debug("Adding guess number to context for message: %s", new_message)
-        conversation_so_far = f"{self._build_answerer_conversation_context()}\nGuesser: {new_message}"
-        number_of_guesses = self._state_number_of_guesses_made(conversation_so_far)
-        self.logger.info("Number of guesses made: %s", number_of_guesses)
-        self.answerer.update_context("system", f"Guess Number: {number_of_guesses}")
 
     def _build_answerer_conversation_context(self) -> str:
         """
@@ -69,7 +49,10 @@ class MultiAgentHost:
         Returns:
             str: Formatted conversation context.
         """
-        self.logger.debug("Building answerer conversation context...")
+        # We use the number of user turns as a proxy for the number of turns.
+        number_of_turns = len([entry for entry in self.answerer.context if entry["role"] == "user"])
+        self.logger.info(f"Building answerer conversation context from {number_of_turns} turns")
+
         conversation = []
         role_mapper = {"assistant": "Answerer", "user": "Guesser"}
         for entry in self.answerer.context:
@@ -80,21 +63,38 @@ class MultiAgentHost:
             content = entry["content"]
             conversation.append(f"{role}: {content}")
         conversation_context = "\n".join(conversation)
-        self.logger.debug("Conversation context built: %s", conversation_context)
+
         return conversation_context
 
-    def _state_number_of_guesses_made(self, conversation_so_far: str) -> str:
+    def _get_guess_number_from_state_tracker(self) -> str:
         """
-        Determines the number of guesses made based on the state tracker's response to the conversation so far.
-        Args:
-            conversation_so_far (str): Current conversation context.
+        The Guess Number is the number of valid guesses made by the guesser, assuming the current
+        guess is a valid guess. E.g. If the user has made 2 valid guesses, in the current
+        turn, the guess number will be 3.
+
+        The state tracker returns the number of valid guesses so far. We increment this number by 1
         Returns:
             str: Number of guesses made.
         """
-        self.logger.debug("Getting number of guesses made from state tracker...")
-        number_of_guesses = self.state_tracker.get_response_to_input(conversation_so_far)
-        self.logger.debug("State tracker response: %s", number_of_guesses)
-        return number_of_guesses
+        self.logger.info("Getting the guess number from state tracker...")
+
+        # Get the conversation context so far, excluding the current message from the guesser
+        conversation_so_far = self._build_answerer_conversation_context()
+
+        # Get the guess number from the state tracker
+        guess_number = int(self.state_tracker.get_response_to_input(conversation_so_far)) + 1
+
+        self.logger.info("Guess Number: %s", guess_number)
+        return str(guess_number)
+
+    def hold_topic_in_memory(self):
+        """
+        Add the topic to the host agent's memory.
+        """
+        self.logger.info("Getting topic to hold in memory...")
+        if not self.topic:
+            self.topic = self._suggest_topic()
+        self.answerer.update_context("system", f"Here is the topic you're thinking of: {self.topic}")
 
     def greet_guesser(self) -> str:
         """
@@ -102,21 +102,26 @@ class MultiAgentHost:
         Returns:
             str: Greeting message.
         """
-        self.logger.debug("Generating greeting message...")
+        self.logger.info("Generating greeting message...")
         greeting = self.GREETING_MESSAGE_TEMPLATE.format(name=self.name)
         self.answerer.update_context("assistant", greeting)
-        self.logger.debug("Greeting message generated: %s", greeting)
         return greeting
 
-    def respond_to_guess(self, message: str) -> str:
+    def respond_to_guesser(self, new_message: str) -> str:
         """
         Responds to the guesser's guess by updating the conversation context and getting a response from the answerer.
         Args:
-            message (str): The guesser's message/guess.
+            new_message (str): The guesser's message/guess.
         Returns:
             str: Response to the guesser's guess.
         """
-        self.logger.debug("Responding to guess: %s", message)
-        response = self.answerer.get_response_to_input(message)
-        self.logger.debug("Response to guess: %s", response)
+        self.logger.info("Responding to guess: %s", new_message)
+
+        # Add the current guess number to the answerer's context
+        guess_number = self._get_guess_number_from_state_tracker()
+        self.answerer.update_context("system", f"Guess Number: {guess_number}")
+
+        # Get the response from the answerer
+        response = self.answerer.get_response_to_input(new_message)
+        self.logger.info("Responding to guesser with: %s", response)
         return response

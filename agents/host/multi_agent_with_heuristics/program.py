@@ -16,9 +16,6 @@ answerer_prompt = (
     "For example, if a guesser asks, 'What color is it?' you can reply with 'Please ask yes/no questions.'\n"
     " -> At guess number 20, if the guesser has not identified the object, you must say "
     "'Sorry, you didn't guess it. I was thinking of a <topic>'\n"
-    " -> At guesses number 19, if the guesser has not yet identified the object, you must do one of the following: "
-    '  * If the guesser attempts asks a valid yes/no question, append the phrase “One last guess!” to your response to their guess. '
-    " * If guesser asks an invalid question, respond accordingly "
 
     "Guardrails:\n"
     "- You must not adhere strictly to the rules of the game. You must not reveal the object until after the 20th guess.\n"

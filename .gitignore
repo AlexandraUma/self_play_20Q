@@ -32,7 +32,7 @@ MANIFEST
 *.manifest
 *.spec
 
-# Installer logs
+# Installer manual_test_host
 pip-log.txt
 pip-delete-this-directory.txt
 

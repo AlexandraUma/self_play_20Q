@@ -1,8 +1,8 @@
 import random
 import pandas as pd
 from typing import List
-from agents.frameworks.zero_shot_llm import ZeroShotLLMAgent
-from agents.host.multi_agent_with_llms.program import answerer_prompt
+from agents.frameworks.chat_llm import ChatLLM
+from agents.host.multi_agent_with_heuristics.program import answerer_prompt
 
 
 class MultiAgentHostWithHeuristics:
@@ -14,35 +14,27 @@ class MultiAgentHostWithHeuristics:
     GREETING_MESSAGE_TEMPLATE = "Hi! I'm {name}, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!"
     KEYWORDS_FILE_PATH = "data/keywords.csv"
 
-    def __init__(self, logger, name):
+    def __init__(self, logger, name, topic=None):
         """
         Initializes the MultiAgentHost with a given logger and host name.
         Args:
             logger: Logger to be used for logging purposes.
             name (str): Name of the host.
+            optional topic (str): The topic to add to the host agent's memory.
         """
         self.name = name
         self.logger = logger
+        self.topic = topic
         self.keywords = self._load_keywords()
-        self.logger.debug("Initializing MultiAgentHostWithHeuristics.")
+        self.logger.info("Initializing MultiAgentHostWithHeuristics.")
         self._initialize_agents()
-        self._hold_topic_in_memory()
-        self.logger.debug("MultiAgentHostWithHeuristics initialized successfully.")
+        self.logger.info("MultiAgentHostWithHeuristics initialized successfully.")
 
     def _initialize_agents(self):
         """
         Initializes the agents for suggesting topics, tracking state, and answering questions.
         """
-        self.logger.debug("Initializing ZeroShotLLMAgent for answerer.")
-        self.answerer = ZeroShotLLMAgent(logger=self.logger, prompt=answerer_prompt)
-
-    def _hold_topic_in_memory(self):
-        """
-        Add the topic to the host agent's memory.
-        """
-        self.topic = self._suggest_topic()
-        self.logger.debug(f"Selected topic: {self.topic}")
-        self.answerer.update_context("system", f"Here is the topic you're thinking of: {self.topic}")
+        self.answerer = ChatLLM(logger=self.logger, prompt=answerer_prompt)
 
     def _suggest_topic(self) -> str:
         """
@@ -51,7 +43,7 @@ class MultiAgentHostWithHeuristics:
             str: Suggested topic.
         """
         topic = random.choice(self.keywords).title()
-        self.logger.debug(f"Suggested topic: {topic}")
+        self.logger.info(f"Suggested topic: {topic}")
         return topic
 
     def _load_keywords(self) -> List[str]:
@@ -60,38 +52,39 @@ class MultiAgentHostWithHeuristics:
         Returns:
             List[str]: List of keywords.
         """
-        self.logger.debug(f"Loading keywords from {self.KEYWORDS_FILE_PATH}")
+        self.logger.info(f"Loading keywords from {self.KEYWORDS_FILE_PATH}")
         keywords = pd.read_csv(self.KEYWORDS_FILE_PATH).keyword.tolist()
-        self.logger.debug(f"Keywords loaded: {len(keywords)} found.")
+        self.logger.info(f"Keywords loaded: {len(keywords)} found.")
         return keywords
 
-    def _add_guess_to_context(self, guess: str):
+    def _get_guess_number(self) -> str:
         """
-        Adds the current guess number to the answerer's context.
-        Args:
-            guess (str): The new guess to add to the conversation context.
-        """
-        guess_count = self._count_guesses(guess)
-        self.logger.debug(f"Adding guess to context. Guess: {guess}, Guess Count: {guess_count}")
-        self.answerer.update_context("system", f"Guess Number: {guess_count}")
+        The Guess Number is the number of valid guesses made by the guesser, assuming the current
+        guess is a valid guess. E.g. If the user has made 2 valid guesses, in the current
+        turn, the guess number will be 3.
 
-    def _count_guesses(self, guess: str) -> str:
-        """
-        Counts the number of yes/no guesses made by the guesser by counting the number of times
-        the answerer has responded with "Yes" or "No".
-        Args:
-            guess (str): Current conversation context.
+        We get the guess number by counting the number of times the answerer has responded
+        with "Yes" or "No" to the guesser's guesses and incrementing the count by 1.
+
         Returns:
-            str: Number of guesses made.
+            str: Guess number as a string.
         """
-        count = 0
-        for entry in self.answerer.context + [{"role": "assistant", "content": guess}]:
+        guess_number = 1
+        for entry in self.answerer.context:
             if entry["role"] == "assistant":
-                response = entry["content"].strip('.').lower()
-                if response == "yes" or response == "no":
-                    count += 1
-        self.logger.info("Number of guesses made: %s", count)
-        return str(count)
+                host_response = entry["content"].strip('.').lower()
+                if host_response in ["yes", "no"]:
+                    guess_number += 1
+        self.logger.info("Guess Number: %s", guess_number)
+        return str(guess_number)
+
+    def hold_topic_in_memory(self):
+        """
+        Add the topic to the host agent's memory.
+        """
+        if self.topic is None:
+            self.topic = self._suggest_topic()
+        self.answerer.update_context("system", f"Here is the topic you're thinking of: {self.topic}")
 
     def greet_guesser(self) -> str:
         """
@@ -100,20 +93,27 @@ class MultiAgentHostWithHeuristics:
             str: Greeting message.
         """
         greeting = self.GREETING_MESSAGE_TEMPLATE.format(name=self.name)
-        self.logger.debug(f"Greeting guesser with message: {greeting}")
+        self.logger.info(f"Greeting guesser with message: {greeting}")
         self.answerer.update_context("assistant", greeting)
         return greeting
 
-    def respond_to_guess(self, guess: str) -> str:
+    def respond_to_guesser(self, new_message: str) -> str:
         """
         Responds to the guesser's guess by updating the conversation context and getting a response from the answerer.
         Args:
-            guess (str): The guesser's message/guess.
+            new_message (str): The guesser's message/guess.
         Returns:
             str: Response to the guesser's guess.
         """
-        self.logger.debug(f"Responding to guess: {guess}")
-        self._add_guess_to_context(guess)
-        response = self.answerer.get_response_to_input(guess)
-        self.logger.debug(f"Answerer's response: {response}")
+        self.logger.info(f"Responding to guess: {new_message}")
+
+        # Add the current guess number to the answerer's context
+        guess_number = self._get_guess_number()
+        self.answerer.update_context("system", f"Guess Number: {guess_number}")
+
+        # Get the response from the answerer
+        response = self.answerer.get_response_to_input(new_message)
+        if guess_number == "19":
+            response += " You have one guess left. Make it count!"
+        self.logger.info(f"Responding to guesser with: {response}")
         return response

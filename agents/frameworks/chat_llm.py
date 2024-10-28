@@ -10,8 +10,8 @@ load_dotenv()
 API_KEY_ENV_VAR = "OPENAI_API_KEY"
 
 
-class ZeroShotLLMAgent:
-    """A zero-shot LLM that stores the conversation history.
+class ChatLLM:
+    """A framework for running a chat llm.
     In this 20Q project, this class is typically instantiated for the host and
     the guesser agents. As such, logging for the public methods is left to the
     caller.
@@ -20,9 +20,9 @@ class ZeroShotLLMAgent:
     ROLE_USER = "user"
     ROLE_ASSISTANT = "assistant"
 
-    def __init__(self, logger: logging.Logger, prompt: str, temperature: float = 0.0):
+    def __init__(self, logger: logging.Logger, prompt: str, temperature: float = 0.0, with_memory: bool = True):
         """
-        Initialize the ZeroShotLLMAgent.
+        Initialize the ChatLLM.
         Args:
             logger (logging.Logger): The logger instance.
             prompt (str): The initial system prompt.
@@ -30,12 +30,13 @@ class ZeroShotLLMAgent:
         """
         self.logger = logger
         self.context: List[Dict[str, str]] = []
-        self.logger.debug("Initializing ZeroShotLLMAgent")
+        self.logger.info("Initializing ChatLLM")
 
+        self.with_memory = with_memory
         if self.with_memory:
-            self.logger.debug("ZeroShotLLMAgent will use memory.")
+            self.logger.info("ChatLLM will use memory.")
         else:
-            self.logger.debug("ZeroShotLLMAgent will not use memory.")
+            self.logger.info("ChatLLM will not use memory.")
 
         self.api_key = self._load_openai_api_key()
         self.chat_llm = self._initialize_chat_llm(temperature)
@@ -46,7 +47,7 @@ class ZeroShotLLMAgent:
         api_key = os.getenv(API_KEY_ENV_VAR)
         if not api_key:
             raise ValueError(f"Please set the {API_KEY_ENV_VAR} environment variable.")
-        self.logger.debug(f"Loaded OpenAI API key: {api_key[:4]}... (truncated)")
+        self.logger.info(f"Loaded OpenAI API key: {api_key[:4]}... (truncated)")
         return api_key
 
     def _initialize_chat_llm(self, temperature: float) -> ChatOpenAI:
@@ -67,10 +68,10 @@ class ZeroShotLLMAgent:
         Invoke the LLM with the conversation history.
         Returns the response from the LLM.
         """
-        self.logger.debug(f"Invoking LLM with context: {self.context}")
+        self.logger.info("Invoking LLM with context")
         try:
             response = self.chat_llm.invoke(self.context).content
-            self.logger.debug(f"Received response from LLM: {response}")
+            self.logger.info(f"Received response from LLM: {response}")
             return response
         except (APIError, APITimeoutError, RateLimitError) as e:
             error_message = f"Failed to invoke LLM after 3 attempts due to: {str(e)}"
@@ -90,8 +91,15 @@ class ZeroShotLLMAgent:
             str: The response to the new message.
         """
         self.update_context(self.ROLE_USER, new_message)
+
         response = self._invoke_llm_on_context()
-        self.update_context(self.ROLE_ASSISTANT, response)
+
+        if self.with_memory:
+            self.update_context(self.ROLE_ASSISTANT, response)
+        else:
+            # If we're not using memory, keep only the instruction prompt
+            self.context = self.context[:1]
+
         return response
 
     def update_context(self, role: str, new_message: str):

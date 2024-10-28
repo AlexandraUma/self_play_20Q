@@ -1,0 +1,526 @@
+################################################## Game 1 ##################################################
+---------Host is thinking of Strawberry-----------
+----Turn 1
+Guesser: Great! Let's get started. Here's my first question: Is the object something that is commonly found indoors?
+Host: No.
+----Turn 2
+Guesser: Is the object a living thing?
+Host: No.
+----Turn 3
+Guesser: Is the object man-made?
+Host: No.
+----Turn 4
+Guesser: Is the object a natural part of the earth, like a rock or a body of water?
+Host: No.
+----Turn 5
+Guesser: Is the object found in the sky or atmosphere?
+Host: No.
+----Turn 6
+Guesser: Is the object found in or on the ground?
+Host: Yes.
+----Turn 7
+Guesser: Is the object a type of plant or related to plants?
+Host: Yes.
+----Turn 8
+Guesser: Is the object a type of tree?
+Host: No.
+----Turn 9
+Guesser: Is the object a type of flower?
+Host: No.
+----Turn 10
+Guesser: Is the object a type of grass or ground cover?
+Host: No.
+----Turn 11
+Guesser: Is the object a type of shrub or bush?
+Host: No.
+----Turn 12
+Guesser: Is the object a type of vegetable or related to vegetables?
+Host: No.
+----Turn 13
+Guesser: Is the object a type of fruit or related to fruits?
+Host: Yes.
+----Turn 14
+Guesser: Is the object a type of berry?
+Host: Yes.
+----Turn 15
+Guesser: Is the object commonly found in the wild rather than cultivated?
+Host: No.
+----Turn 16
+Guesser: Is the object a type of berry that is typically red when ripe, like a strawberry?
+Host: Yes.
+----Turn 17
+Guesser: Is the object a strawberry?
+Host: Yes, you've got it! It's a strawberry. Great job!
+Game over!
+
+################################################## Game 2 ##################################################
+---------Host is thinking of Ballet Shoes-----------
+Host: Hi! I'm Kay, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1
+Guesser: Great! Let's get started. Is the object you're thinking of something that is commonly found indoors?
+Host: Yes.
+----Turn 2
+Guesser: Is the object typically found in a specific room of the house, like the kitchen or bathroom?
+Host: No.
+----Turn 3
+Guesser: Is the object primarily used for entertainment or leisure activities?
+Host: Yes.
+----Turn 4
+Guesser: Is the object electronic or does it require electricity to function?
+Host: No.
+----Turn 5
+Guesser: Is the object something that is typically used by more than one person at a time?
+Host: No.
+----Turn 6
+Guesser: Is the object something that can be held or used with one hand?
+Host: No.
+----Turn 7
+Guesser: Is the object larger than a microwave oven?
+Host: No.
+----Turn 8
+Guesser: Is the object used for a specific type of game or activity, like a board game or puzzle?
+Host: No.
+----Turn 9
+Guesser: Is the object something that is typically used while sitting or lying down?
+Host: No.
+----Turn 10
+Guesser: Is the object used for a creative or artistic activity?
+Host: Yes.
+----Turn 11
+Guesser: Is the object primarily used for drawing or painting?
+Host: No.
+----Turn 12
+Guesser: Is the object used for a musical activity or related to music?
+Host: No.
+----Turn 13
+Guesser: Is the object used for crafting or building things?
+Host: No.
+----Turn 14
+Guesser: Is the object related to photography or capturing images?
+Host: No.
+----Turn 15
+Guesser: Is the object used in writing or calligraphy?
+Host: No.
+----Turn 16
+Guesser: Is the object used in a form of physical art, like sculpture or pottery?
+Host: No.
+----Turn 17
+Guesser: Is the object related to performing arts, such as acting or dance?
+Host: Yes.
+----Turn 18
+Guesser: Is the object something that is worn or used as part of a costume or performance attire?
+Host: Yes.
+----Turn 19
+Guesser: Is the object a type of footwear used in performances, like dance shoes or character shoes?
+Host: Yes. You have one guess left. Make it count!
+----Turn 20
+Guesser: Is the object ballet shoes?
+Host: Yes, you've got it! It's ballet shoes. Great job!
+Game over!
+
+################################################## Game 3 ##################################################
+---------Host is thinking of elephant-----------
+Host: Hi! I'm Kay, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1
+Guesser: Great! Let's get started. Here's my first question: Is the object something that is commonly found indoors?
+Host: No.
+----Turn 2
+Guesser: Is the object a natural element or part of nature?
+Host: Yes.
+----Turn 3
+Guesser: Is the object a type of plant?
+Host: No.
+----Turn 4
+Guesser: Is the object a type of animal?
+Host: Yes.
+----Turn 5
+Guesser: Is the animal larger than a human?
+Host: Yes.
+----Turn 6
+Guesser: Is the animal primarily found in water?
+Host: No.
+----Turn 7
+Guesser: Is the animal a mammal?
+Host: Yes.
+----Turn 8
+Guesser: Is the animal known for having a trunk?
+Host: Yes.
+----Turn 9
+Guesser: Is the animal an elephant?
+Host: Yes, you've got it! It's an elephant. Great job!
+Game over!
+
+################################################## Game 4 ##################################################
+---------Host is thinking of cake-----------
+Host: Hi! I'm Kay, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1
+Guesser: Great! Let's get started. Here's my first question: Is the object something that is commonly found indoors?
+Host: Yes.
+----Turn 2
+Guesser: Is the object typically used for a specific function or purpose?
+Host: Yes.
+----Turn 3
+Guesser: Is the object primarily used in the kitchen?
+Host: Yes.
+----Turn 4
+Guesser: Is the object used for preparing or cooking food?
+Host: No.
+----Turn 5
+Guesser: Is the object used for storing food or beverages?
+Host: No.
+----Turn 6
+Guesser: Is the object used for cleaning or maintaining the kitchen?
+Host: No.
+----Turn 7
+Guesser: Is the object used for serving or consuming food or beverages?
+Host: No.
+----Turn 8
+Guesser: Is the object an appliance that requires electricity to function?
+Host: No.
+----Turn 9
+Guesser: Is the object a tool or utensil used for measuring?
+Host: No.
+----Turn 10
+Guesser: Is the object used for organizing or holding items in the kitchen?
+Host: No.
+----Turn 11
+Guesser: Is the object related to safety or protection in the kitchen?
+Host: No.
+----Turn 12
+Guesser: Is the object decorative or used for aesthetic purposes in the kitchen?
+Host: No.
+----Turn 13
+Guesser: Is the object used for waste disposal or managing trash in the kitchen?
+Host: No.
+----Turn 14
+Guesser: Is the object related to dining or table settings, like a placemat or napkin?
+Host: No.
+----Turn 15
+Guesser: Is the object something that is used for a specific task or activity in the kitchen that hasn't been covered yet?
+Host: Yes.
+----Turn 16
+Guesser: Is the object used for sharpening or maintaining kitchen tools, like knives?
+Host: No.
+----Turn 17
+Guesser: Is the object used for opening or sealing items, such as a can opener or a jar opener?
+Host: No.
+----Turn 18
+Guesser: Is the object used for handling hot items, like an oven mitt or pot holder?
+Host: No.
+----Turn 19
+Guesser: Is the object used for cleaning or maintaining personal hygiene, like a hand towel or soap dispenser?
+Host: No. You have one guess left. Make it count!
+----Turn 20
+Guesser: Is the object a timer or clock used for tracking time in the kitchen?
+Host: No. Sorry, you didn't guess it. I was thinking of a cake.
+Game over!
+
+################################################## Game 5 ##################################################
+---------Host is thinking of cucumber-----------
+Host: Hi! I'm Kay, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1
+Guesser: Great! Let's get started. Is the object something that is commonly found indoors?
+Host: Yes.
+----Turn 2
+Guesser: Is the object typically found in a specific room of the house, like the kitchen or bathroom?
+Host: Yes.
+----Turn 3
+Guesser: Is the object commonly found in the kitchen?
+Host: Yes.
+----Turn 4
+Guesser: Is the object primarily used for food preparation or cooking?
+Host: Yes.
+----Turn 5
+Guesser: Is the object an appliance?
+Host: No.
+----Turn 6
+Guesser: Is the object a utensil?
+Host: No.
+----Turn 7
+Guesser: Is the object used for storing food?
+Host: No.
+----Turn 8
+Guesser: Is the object used for serving or eating food?
+Host: No.
+----Turn 9
+Guesser: Is the object used for cleaning purposes in the kitchen?
+Host: No.
+----Turn 10
+Guesser: Is the object used for measuring ingredients?
+Host: No.
+----Turn 11
+Guesser: Is the object used for cutting or chopping?
+Host: No.
+----Turn 12
+Guesser: Is the object something that is typically used on the stovetop or in the oven?
+Host: No.
+----Turn 13
+Guesser: Is the object used for mixing or combining ingredients?
+Host: No.
+----Turn 14
+Guesser: Is the object related to beverages in any way?
+Host: No.
+----Turn 15
+Guesser: Is the object something that is used for organizing or holding items in the kitchen?
+Host: No.
+----Turn 16
+Guesser: Is the object primarily used for protection or safety in the kitchen?
+Host: No.
+----Turn 17
+Guesser: Is the object decorative in nature?
+Host: No.
+----Turn 18
+Guesser: Is the object disposable or single-use?
+Host: No.
+----Turn 19
+Guesser: Is the object used for baking?
+Host: No. You have one guess left. Make it count!
+----Turn 20
+Guesser: Is the object a cutting board?
+Host: Sorry, you didn't guess it. I was thinking of a cucumber.
+Game over!
+################################################## Game 6 ##################################################
+---------Host is thinking of puzzle-----------
+Host: Hi! I'm Kay, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1
+Guesser: Hi Kay! Let's start fresh. Is the object something that is commonly found indoors?
+Host: Yes.
+----Turn 2
+Guesser: Is the object typically found in a specific room of the house, like the kitchen or bathroom?
+Host: No.
+----Turn 3
+Guesser: Is the object primarily used for entertainment or leisure?
+Host: Yes.
+----Turn 4
+Guesser: Is the object electronic?
+Host: No.
+----Turn 5
+Guesser: Is the object something that is typically used for playing games?
+Host: Yes.
+----Turn 6
+Guesser: Is the object a type of board game?
+Host: No.
+----Turn 7
+Guesser: Is the object used for outdoor games or activities?
+Host: No.
+----Turn 8
+Guesser: Is the object a type of card game?
+Host: No.
+----Turn 9
+Guesser: Is the object something that can be used by a single person?
+Host: Yes.
+----Turn 10
+Guesser: Is the object something that involves physical activity or movement?
+Host: No.
+----Turn 11
+Guesser: Is the object a puzzle?
+Host: Yes, you've got it! It's a puzzle. Great job!
+Game over!
+
+################################################## Game 7 ##################################################
+---------Host is thinking of traffic light-----------
+Host: Hi! I'm Kay, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1
+Guesser: Great! Let's get started. Is the object you're thinking of something that is commonly found indoors?
+Host: No.
+----Turn 2
+Guesser: Is the object a natural object, rather than man-made?
+Host: No.
+----Turn 3
+Guesser: Is the object typically used for transportation?
+Host: No.
+----Turn 4
+Guesser: Is the object commonly used for recreational or leisure activities?
+Host: No.
+----Turn 5
+Guesser: Is the object used in construction or building?
+Host: No.
+----Turn 6
+Guesser: Is the object related to agriculture or gardening?
+Host: No.
+----Turn 7
+Guesser: Is the object electronic or does it require electricity to function?
+Host: Yes.
+----Turn 8
+Guesser: Is the object a type of household appliance?
+Host: No.
+----Turn 9
+Guesser: Is the object commonly used for communication purposes?
+Host: No.
+----Turn 10
+Guesser: Is the object used in an office or workplace setting?
+Host: No.
+----Turn 11
+Guesser: Is the object used for entertainment purposes?
+Host: No.
+----Turn 12
+Guesser: Is the object used for safety or security purposes?
+Host: Yes.
+----Turn 13
+Guesser: Is the object a type of alarm or alert system?
+Host: No.
+----Turn 14
+Guesser: Is the object used for surveillance or monitoring?
+Host: No.
+----Turn 15
+Guesser: Is the object a type of protective gear or equipment?
+Host: No.
+----Turn 16
+Guesser: Is the object related to lighting or visibility?
+Host: Yes.
+----Turn 17
+Guesser: Is the object a type of outdoor lighting, like a streetlight or floodlight?
+Host: No.
+----Turn 18
+Guesser: Is the object a flashlight or portable light source?
+Host: No.
+----Turn 19
+Guesser: Is the object a type of emergency light, like those used in vehicles or for signaling?
+Host: No. You have one guess left. Make it count!
+----Turn 20
+Guesser: Is the object a traffic light?
+Host: Yes, you've got it! It's a traffic light. Great job!
+Game over!
+
+################################################## Game 8 ##################################################
+---------Host is thinking of motorcycle-----------
+Host: Hi! I'm Kay, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1
+Guesser: Hi Kay! Let's start again. Is the object you're thinking of something that is commonly found outdoors?
+Host: Yes.
+----Turn 2
+Guesser: Is the object a natural object, rather than man-made?
+Host: No.
+----Turn 3
+Guesser: Is the object used for transportation?
+Host: Yes.
+----Turn 4
+Guesser: Is the object a type of vehicle?
+Host: Yes.
+----Turn 5
+Guesser: Is the vehicle primarily used on roads?
+Host: Yes.
+----Turn 6
+Guesser: Is the vehicle designed to carry multiple passengers, like a bus or van?
+Host: No.
+----Turn 7
+Guesser: Is the vehicle a type of car?
+Host: No.
+----Turn 8
+Guesser: Is the vehicle a motorcycle or scooter?
+Host: Yes, you've got it! It's a motorcycle. Great job!
+Game over!
+
+ ################################################## Game 9 ##################################################
+---------Host is thinking of jellyfish-----------
+Host: Hi! I'm Kay, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1
+Guesser: Great! Let's get started. Is the object you're thinking of something that is commonly found indoors?
+Host: No.
+----Turn 2
+Guesser: Is the object a living thing?
+Host: Yes.
+----Turn 3
+Guesser: Is the object an animal?
+Host: Yes.
+----Turn 4
+Guesser: Is the animal a mammal?
+Host: No.
+----Turn 5
+Guesser: Is the animal a bird?
+Host: No.
+----Turn 6
+Guesser: Is the animal a reptile?
+Host: No.
+----Turn 7
+Guesser: Is the animal an amphibian?
+Host: No.
+----Turn 8
+Guesser: Is the animal a fish?
+Host: No.
+----Turn 9
+Guesser: Is the animal an insect?
+Host: No.
+----Turn 10
+Guesser: Is the animal an arachnid?
+Host: No.
+----Turn 11
+Guesser: Is the animal a crustacean?
+Host: No.
+----Turn 12
+Guesser: Is the animal a mollusk?
+Host: No.
+----Turn 13
+Guesser: Is the animal a type of worm or annelid?
+Host: No.
+----Turn 14
+Guesser: Is the animal a type of echinoderm, like a starfish or sea urchin?
+Host: No.
+----Turn 15
+Guesser: Is the animal a type of cnidarian, such as a jellyfish or coral?
+Host: Yes.
+----Turn 16
+Guesser: Is the animal a jellyfish?
+Host: Yes, you've got it! It's a jellyfish. Great job!
+Game over!
+
+################################################## Game 10 ##################################################
+---------Host is thinking of doll-----------
+Host: Hi! I'm Kay, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1
+Guesser: Great! Let's get started. Is the object you're thinking of something that is commonly found indoors?
+Host: Yes.
+----Turn 2
+Guesser: Is the object typically found in a specific room of the house, like the kitchen or bathroom?
+Host: No.
+----Turn 3
+Guesser: Is the object primarily used for entertainment or leisure activities?
+Host: Yes.
+----Turn 4
+Guesser: Is the object electronic or does it require electricity to function?
+Host: No.
+----Turn 5
+Guesser: Is the object something that is typically used by more than one person at a time?
+Host: No.
+----Turn 6
+Guesser: Is the object something that is commonly used by children?
+Host: Yes.
+----Turn 7
+Guesser: Is the object a type of toy?
+Host: Yes.
+----Turn 8
+Guesser: Is the toy primarily made of plastic?
+Host: Yes.
+----Turn 9
+Guesser: Is the toy something that can be assembled or built, like building blocks or a construction set?
+Host: No.
+----Turn 10
+Guesser: Is the toy something that is used for imaginative play, like action figures or dolls?
+Host: Yes.
+----Turn 11
+Guesser: Is the toy a doll?
+Host: Yes, you've got it! It's a doll. Great job!
+Game over!
+
+ ################################################## Game 11  ##################################################
+---------Host is thinking of bald eagle-----------
+Host: Hi! I'm Kay, the host of this game. I'm thinking of an object. You have 20 questions to guess what it is. Go ahead!
+----Turn 1
+Guesser: Is the object you're thinking of something that is commonly found indoors?
+Host: No.
+----Turn 2
+Guesser: Is the object a living thing?
+Host: Yes.
+----Turn 3
+Guesser: Is the object an animal?
+Host: Yes.
+----Turn 4
+Guesser: Is the animal a mammal?
+Host: No. You have one guess left. Make it count!
+----Turn 5
+Guesser: Is the animal a bird?
+Host: Yes.
+----Turn 6
+Guesser: Is the bird you're thinking of an eagle?
+Host: Sorry, you didn't guess it. I was thinking of a bald eagle.
+Game over!
