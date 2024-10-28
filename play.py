@@ -7,9 +7,6 @@ from agents.host.multi_agent_with_heuristics.agent import MultiAgentHostWithHeur
 
 
 class SelfPlay:
-    """This class is responsible for triggering the self-play of the
-     20Q game between two agents, and logging the sessions.
-    """
 
     def __init__(self, num_games):
         """Initialize the SelfPlay class.

@@ -5,9 +5,6 @@ from agents.frameworks.chat_llm import ChatLLM
 
 
 class Evaluation:
-    """
-    Evaluate the host and guesser agents
-    """
 
     def __init__(self):
         self.logger = logging.getLogger(__name__)
