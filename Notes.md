@@ -9,7 +9,7 @@ The 20Q environment is:
 
 
 
-* **Multi-agent:** The game involves two delineated roles—the ***host ***and the ***guesser ***— each with the ability to act independently. Each role/agent has a (hidden) state that must be communicated to the other to be known.
+* **Multi-agent:** The game involves two delineated roles—the ***host*** and the ***guesser*** — each with the ability to act independently. Each role/agent has a (hidden) state that must be communicated to the other to be known.
 * **Partially observable:**  Each agent in the environment does not know the “thoughts”  of the other.
 * **Competitive (or Semi-cooperative)**: 20Q can be a competitive game, with each agent in the environment seeking to optimise their performance to best the other, and “win” the game. In this competitive mode, the host aims to suggest a topic that the guesser cannot guess (while sticking to whatever constraints the game sets). The guesser, for their part, aims to guess the topic, in as few turns as possible.
 
