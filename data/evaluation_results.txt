@@ -1,0 +1,31 @@
+---------Evaluating self play: react_guesser_easy----------
+Evaluating Guesser:
+Win rate: 0.18181818181818182
+Average number of turns: 18.818181818181817
+Guess Efficiency: 0.21359223300970873
+Evaluating Host:
+Answer Accuracy: 0.8743961352657005
+
+---------Evaluating self play: react_guesser_hard----------
+Evaluating Guesser:
+Win rate: 0.3
+Average number of turns: 18.9
+Guess Efficiency: 0.27419354838709675
+Evaluating Host:
+Answer Accuracy: 0.873015873015873
+
+---------Evaluating self play: simple_guesser_easy----------
+Evaluating Guesser:
+Win rate: 0.7
+Average number of turns: 15.8
+Guess Efficiency: 0.3525641025641026
+Evaluating Host:
+Answer Accuracy: 0.8607594936708861
+
+---------Evaluating self play: simple_guesser_hard----------
+Evaluating Guesser:
+Win rate: 0.5
+Average number of turns: 17.6
+Guess Efficiency: 0.39080459770114945
+Evaluating Host:
+Answer Accuracy: 0.8522727272727273
