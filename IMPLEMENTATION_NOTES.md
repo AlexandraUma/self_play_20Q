@@ -7,8 +7,6 @@ In this section, we describe the nature of the 20Q task using the taxonomy outli
 
 The 20Q environment is:
 
-
-
 * **Multi-agent:** The game involves two delineated roles—the ***host*** and the ***guesser*** — each with the ability to act independently. Each role/agent has a (hidden) state that must be communicated to the other to be known.
 * **Partially observable:**  Each agent in the environment does not know the “thoughts”  of the other.
 * **Competitive (or Semi-cooperative)**: 20Q can be a competitive game, with each agent in the environment seeking to optimise their performance to best the other, and “win” the game. In this competitive mode, the host aims to suggest a topic that the guesser cannot guess (while sticking to whatever constraints the game sets). The guesser, for their part, aims to guess the topic, in as few turns as possible.
@@ -72,8 +70,6 @@ Given the reactive nature of the host's role, a Simple Reflex Agent with Memory 
 
 A manual evaluation of six game sessions yielded the following results:
 
-
-
 * **Guess Evaluation Accuracy:** 99.2% (One incorrect evaluation out of 120 questions)
 * **Turn Tracking:** 0% accuracy (Consistently exceeded the 20-question limit)
 
@@ -84,12 +80,12 @@ While the agent demonstrated high accuracy in evaluating guesses, it failed to a
 
 To address the limitations of the Simple Reflex Host with Memory, a Multi-Agent Host was implemented. This approach would have incorporated a **topic suggester** and a **state tracker**, both simple reflex agents without memory, to work in conjunction with the answerer. This approach showed promise, however given that we’ve limited the scope of the game for this simple exploration, a more practical approach was adopted: 
 
+* **Topic Suggester** was replaced with a simple function that selects topics from a [curated corpus](https://www.kaggle.com/code/waechter/llm-20-questions-games-dataset/output?select=keywords.csv).
+* **State Tracking** was replaced with a function that estimates guess number by counting the number of “yes” and “no” host responses.  This function relies on the ability of the answerer to only respond to the host with “yes” or “no” as instructed.
 
+This simplified approach, while not utilising full-fledged agents, effectively addresses the issues of topic variety and turn tracking. This Multi-Agent Host, enhanced with heuristics, achieved 100% accuracy in turn tracking, and in 30 game sessions, did not repeat topics as the probability of picking each word in keyword corpus is about 0.06%. 
 
-* **Topic Suggester **was replaced with a simple function that selects topics from a [curated corpus](https://www.kaggle.com/code/waechter/llm-20-questions-games-dataset/output?select=keywords.csv).
-* **State Tracking **was replaced with a function that estimates guess number by counting the number of “yes” and “no” host responses.  This function relies on the ability of the answerer to only respond to the host with “yes” or “no” as instructed.
-
-This simplified approach, while not utilising full-fledged agents, effectively addresses the issues of topic variety and turn tracking. This Multi-Agent Host, enhanced with heuristics, achieved 100% accuracy in turn tracking, and in 30 game sessions, did not repeat topics as the probability of picking each word in keyword corpus is about 0.06%.
+All **automatatic evaluation results** after self-play were carried out using this agent. See ```evaluation_results.csv```
 
 
 ## The Guesser
@@ -99,10 +95,9 @@ The guesser's primary objective is to correctly identify the hidden topic using 
 To evaluate the guesser's performance, we will consider the following metrics:
 
 
-
 1. **Win Rate:** The percentage of games  won.
 2. **Question Efficiency:** A measure of the guesser's efficiency. A good guesser should maximise "yes" responses, minimising unnecessary questions. This metric calculates the ratio of "yes" to "no" responses received.
-3. **Average Turns: **Average number of turns used during the game.
+3. **Average Turns:** Average number of turns used during the game.
 
 The rest of this section will detail the implementation and evaluation of various guesser agent iterations.
 
@@ -127,24 +122,23 @@ This document and the accompanying codebase present an initial exploration of th
 
 **Agent Enhancements:**
 
-
-
 * **Host Agent:**
+    * Better prompting for the multi-host agent with heuristics -- include guardrails to avoid LLM misuse and jailbreaking
     * Incorporate a reasoning component, such as a ReAct framework or chain-of-thought prompting, to enhance guess evaluation accuracy.
-* **Guesser Agent:**
+    * (Alternatively, include a classifier of some sort to classify each question as True or False)
+* **Guesser Agent:** 
+    * Better prompting for current approaches.
     * Improve reasoning capabilities to minimise redundant questions and avoid "tunnel vision."
+    * Perhaps, also include a component that uses heuristics along with a dictionary to make a guess after discerning the category
     * Train the agent using Reinforcement Learning to optimise question selection.
 
 **Experimental Setup:**
-
-
-
+* **Better Error Handling:** E.g. Stopping a run if LLM calls fails.
 * **Parallelism:** Implement asynchronous execution of agent pairs to accelerate large-scale evaluation.
-* **Codebase:** Reorganise and refactor the code for improved readability and maintainability.
+* **Codebase:** Reorganise and refactor the code for improved readability and maintainability. 
+* **Better Documentation:** For accessibility
 
 **Game Variations:**
-
-
 
 * **"Sometimes" Answer:** Introduce a third answer category to facilitate more nuanced reasoning.
 * **Categorised Topics:** Limit topic exploration to specific categories for a simplified game. However, it's important to note that this simplification merely postpones the underlying challenges.
