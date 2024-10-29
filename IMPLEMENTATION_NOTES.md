@@ -85,7 +85,7 @@ To address the limitations of the Simple Reflex Host with Memory, a Multi-Agent 
 
 This simplified approach, while not utilising full-fledged agents, effectively addresses the issues of topic variety and turn tracking. This Multi-Agent Host, enhanced with heuristics, achieved 100% accuracy in turn tracking, and in 30 game sessions, did not repeat topics as the probability of picking each word in keyword corpus is about 0.06%. 
 
-All **automatatic evaluation results** after self-play were carried out using this agent. See ```evaluation_results.csv```
+All **automatatic evaluation results** after self-play were carried out using this agent. See ```data/evaluation_results.csv```
 
 
 ## The Guesser
@@ -106,7 +106,7 @@ The rest of this section will detail the implementation and evaluation of variou
 
 Unlike the host agent, the guesser agent's task is inherently more challenging. We cannot pre-specify questions due to the unknown topic. Instead, the agent must autonomously generate questions based on a simple goal: accurately guessing the topic.
 
-Automatic evaluation showed  a 70% win rate for easy topics, it struggled with tougher ones, achieving only 50% accuracy. It's important to note that these results are based on a limited sample size of 10 games per difficulty level. Additionally, the agent's question efficiency was around 40%, indicating room for improvement in its ability to efficiently explore the search space.
+Automatic evaluation showed  a 70% win rate for easy topics, it struggled with tougher ones, achieving only 50% accuracy. It's important to note that these results are based on a limited sample size of 10 games per difficulty level. Additionally, the agent's question efficiency was around 40%, indicating room for improvement in its ability to efficiently explore the search space. See ```data/evaluation_results.txt``` for more details.
 
 
 ### Goal-Based Host with Explicit Reasoning
