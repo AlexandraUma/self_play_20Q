@@ -94,15 +94,15 @@ if __name__ == "__main__":
     HARD_TOPICS = ["Silver Ore", "Pressure Gauge", "Soldering Iron", "Router", "Cupcake", "Nintendo Wii",
                    "Ventilation System", "Honeydew", "Tiramisu", "Electric Screwdriver"]
 
-# Initialize the self-play session with the number of games to play
-num_games_to_play = input("Enter the number of games to play: ")
-num_games_to_play = int(num_games_to_play) if num_games_to_play.isdigit() else 1
-self_play = SelfPlay(num_games=num_games_to_play)
+    # Initialize the self-play session with the number of games to play
+    num_games_to_play = input("Enter the number of games to play: ")
+    num_games_to_play = int(num_games_to_play) if num_games_to_play.isdigit() else 1
+    self_play = SelfPlay(num_games=num_games_to_play)
 
-# Choose the mode of play
-mode = input("Enter the mode of play (easy/hard): ").strip().lower()
+    # Choose the mode of play
+    mode = input("Enter the mode of play (easy/hard): ").strip().lower()
 
-if mode == "easy":
-    self_play.start(EASY_TOPICS)
-else:
-    self_play.start(HARD_TOPICS)
+    if mode == "easy":
+        self_play.start(EASY_TOPICS)
+    else:
+        self_play.start(HARD_TOPICS)
