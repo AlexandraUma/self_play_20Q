@@ -13,3 +13,5 @@ Run this to play a game with the guesser agent.
 
 ```play_test_host.py```
 Run this to play a game with the host agent.
+
+See ```IMPLEMENTATION_NOTES.md``` for more details.
