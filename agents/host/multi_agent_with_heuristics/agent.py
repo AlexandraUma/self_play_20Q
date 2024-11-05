@@ -84,7 +84,7 @@ class MultiAgentHostWithHeuristics:
         """
         if self.topic is None:
             self.topic = self._suggest_topic()
-        self.answerer.update_context("system", f"Here is the topic you're thinking of: {self.topic}")
+        self.answerer.add_message_to_context("system", f"Here is the topic you're thinking of: {self.topic}")
 
     def greet_guesser(self) -> str:
         """
@@ -94,10 +94,10 @@ class MultiAgentHostWithHeuristics:
         """
         greeting = self.GREETING_MESSAGE_TEMPLATE.format(name=self.name)
         self.logger.info(f"Greeting guesser with message: {greeting}")
-        self.answerer.update_context("assistant", greeting)
+        self.answerer.add_message_to_context("assistant", greeting)
         return greeting
 
-    def respond_to_guesser(self, new_message: str) -> str:
+    async def respond_to_guesser(self, new_message: str) -> str:
         """
         Responds to the guesser's guess by updating the conversation context and getting a response from the answerer.
         Args:
@@ -109,10 +109,10 @@ class MultiAgentHostWithHeuristics:
 
         # Add the current guess number to the answerer's context
         guess_number = self._get_guess_number()
-        self.answerer.update_context("system", f"Guess Number: {guess_number}")
+        self.answerer.add_message_to_context("system", f"Guess Number: {guess_number}")
 
         # Get the response from the answerer
-        response = self.answerer.get_response_to_input(new_message)
+        response = await self.answerer.async_get_response_to_input(new_message)
         if guess_number == "19":
             response += " You have one guess left. Make it count!"
         self.logger.info(f"Responding to guesser with: {response}")

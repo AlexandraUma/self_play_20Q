@@ -1,5 +1,6 @@
 import time
 import logging
+import asyncio
 from agents.host.multi_agent_with_heuristics.agent import MultiAgentHostWithHeuristics
 from agents.host.simple_reflex_agent_with_memory.agent import SimpleReflexHost
 from agents.host.multi_agent_with_llms.agent import MultiAgentHost
@@ -39,7 +40,7 @@ def get_host(agent_choice: str, topic=None):
         return MultiAgentHostWithHeuristics(logger=logger, name="Alice")
 
 
-def play_game(host, game_index, topic=None):
+async def play_game(host, game_index, topic=None):
     print("#" * 50, f"Game {game_index}", "#" * 50)
 
     # Set the topic if provided
@@ -61,7 +62,7 @@ def play_game(host, game_index, topic=None):
         if 'end' in guesser_message:
             break
 
-        response = host.respond_to_guesser(guesser_message)
+        response = await host.respond_to_guesser(guesser_message)
         print(f"{host.name}: {response}")
         if "you've got it" in response or "you didn't guess it" in response:
             break
@@ -73,7 +74,7 @@ def play_game(host, game_index, topic=None):
         print("Game over!\n")
 
 
-def test_the_host():
+async def test_the_host():
     num_games = input("Enter the number of games to play: ")
     try:
         num_games = int(num_games)
@@ -90,8 +91,8 @@ def test_the_host():
         else:
             topic = None
         host = get_host(agent_choice, topic)
-        play_game(host, game_index=i+1, topic='strawberry')
+        await play_game(host, game_index=i+1, topic='strawberry')
 
 
 if __name__ == "__main__":
-    test_the_host()
+    asyncio.run(test_the_host())
