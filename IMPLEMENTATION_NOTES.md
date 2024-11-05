@@ -134,7 +134,7 @@ This document and the accompanying codebase present an initial exploration of th
 
 **Experimental Setup:**
 * **Better Error Handling:** E.g. Stopping a run if LLM calls fails.
-* **Parallelism:** Implement asynchronous execution of agent pairs to accelerate large-scale evaluation.
+* **Parallelism:** Look for blocking code in asynchronous execution of agent pairs to accelerate large-scale evaluation.
 * **Codebase:** Reorganise and refactor the code for improved readability and maintainability. 
 * **Better Documentation:** For accessibility
 
